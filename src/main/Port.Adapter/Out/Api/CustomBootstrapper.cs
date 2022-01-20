@@ -3,6 +3,8 @@ using Nancy.TinyIoc;
 using ei8.EventSourcing.Client;
 using ei8.Data.ExternalReference.Application;
 using ei8.Data.ExternalReference.Port.Adapter.IO.Process.Services;
+using CQRSlite.Events;
+using CQRSlite.Domain;
 
 namespace ei8.Data.ExternalReference.Port.Adapter.Out.Api
 {
@@ -16,9 +18,19 @@ namespace ei8.Data.ExternalReference.Port.Adapter.Out.Api
         {
             base.ConfigureRequestContainer(container, context);
 
-            container.Register<IEventSerializer, EventSerializer>(new EventSerializer());
-            container.Register<IEventSourceFactory, EventSourceFactory>();
+            container.Register<IEventSerializer, EventSerializer>();
             container.Register<ISettingsService, SettingsService>();
+            container.Register<IEventStoreUrlService>(
+                (tic, npo) => {
+                    var ss = container.Resolve<ISettingsService>();
+                    return new EventStoreUrlService(
+                        ss.EventSourcingInBaseUrl + "/",
+                        ss.EventSourcingOutBaseUrl + "/"
+                        );
+                });
+            container.Register<IEventStore, HttpEventStoreClient>();
+            container.Register<IRepository, Repository>();
+            container.Register<ISession, Session>();
             container.Register<IItemQueryService, ItemQueryService>();
         }
     }
