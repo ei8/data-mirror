@@ -2,12 +2,12 @@ version: '3.4'
 
 services:
   data.externalreference.in.api:
-    image: ei8works/data.externalreference.in.api:0.1.0
+    image: ei8works/data.externalreference.in.api:0.1.1
     build:
       context: .
       dockerfile: ./main/Port.Adapter/In/Api/Dockerfile
   data.externalreference.out.api:
-    image: ei8works/data.externalreference.out.api:0.1.0
+    image: ei8works/data.externalreference.out.api:0.1.1
     build:
       context: .
       dockerfile: ./main/Port.Adapter/Out/Api/Dockerfile
