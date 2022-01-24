@@ -8,46 +8,50 @@ using ei8.EventSourcing.Client;
 using ei8.EventSourcing.Client.In;
 using ei8.Data.ExternalReference.Domain.Model;
 using System;
+using CQRSlite.Domain;
+using CQRSlite.Events;
 
 namespace ei8.Data.ExternalReference.Application
 {
     public class ItemCommandHandlers : 
         ICancellableCommandHandler<ChangeUrl>
     {
-        private readonly IEventSourceFactory eventSourceFactory;
-        private readonly ISettingsService settingsService;
+        private readonly IAuthoredEventStore eventStore;
+        private readonly ISession session;
 
-        public ItemCommandHandlers(IEventSourceFactory eventSourceFactory, ISettingsService settingsService)
+        public ItemCommandHandlers(IEventStore eventStore, ISession session)
         {
-            AssertionConcern.AssertArgumentNotNull(eventSourceFactory, nameof(eventSourceFactory));
-            AssertionConcern.AssertArgumentNotNull(settingsService, nameof(settingsService));
+            AssertionConcern.AssertArgumentNotNull(eventStore, nameof(eventStore));
+            AssertionConcern.AssertArgumentValid(
+                es => es is IAuthoredEventStore,
+                eventStore,
+                "Specified 'eventStore' must be an IAuthoredEventStore implementation.",
+                nameof(eventStore)
+                );
+            AssertionConcern.AssertArgumentNotNull(session, nameof(session));
 
-            this.eventSourceFactory = eventSourceFactory;
-            this.settingsService = settingsService;
+            this.eventStore = (IAuthoredEventStore)eventStore;
+            this.session = session;
         }
 
         public async Task Handle(ChangeUrl message, CancellationToken token = default(CancellationToken))
         {
             AssertionConcern.AssertArgumentNotNull(message, nameof(message));
 
-            var eventSource = this.eventSourceFactory.Create(
-                this.settingsService.EventSourcingInBaseUrl + "/",
-                this.settingsService.EventSourcingOutBaseUrl + "/",
-                message.AuthorId
-                );
+            this.eventStore.SetAuthor(message.AuthorId);
 
-            if ((await eventSource.EventStoreClient.Get(message.Id, 0)).Count() == 0)
+            if ((await this.eventStore.Get(message.Id, 0)).Count() == 0)
             {
                 var item = new Item(message.Id, message.NewUrl);
-                await eventSource.Session.Add(item, token);
+                await this.session.Add(item, token);
             }
             else
             {
-                Item item = await eventSource.Session.Get<Item>(message.Id, nameof(item), message.ExpectedVersion, token);
+                Item item = await this.session.Get<Item>(message.Id, nameof(item), message.ExpectedVersion, token);
                 item.ChangeUrl(message.NewUrl);
             }
             
-            await eventSource.Session.Commit(token);
+            await this.session.Commit(token);
         }
     }
 }
