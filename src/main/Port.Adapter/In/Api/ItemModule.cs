@@ -1,16 +1,16 @@
 ﻿using CQRSlite.Commands;
 using Nancy;
 using System;
-using ei8.Data.ExternalReference.Application;
+using ei8.Data.Mirror.Application;
 using CQRSlite.Domain.Exception;
 using neurUL.Common.Api;
-using ei8.Data.ExternalReference.Port.Adapter.In.InProcess;
+using ei8.Data.Mirror.Port.Adapter.In.InProcess;
 
-namespace ei8.Data.ExternalReference.Port.Adapter.In.Api
+namespace ei8.Data.Mirror.Port.Adapter.In.Api
 {
     public class ItemModule : NancyModule
     {
-        public ItemModule(IItemAdapter itemAdapter) : base("/data/externalreferences")
+        public ItemModule(IItemAdapter itemAdapter) : base("/data/mirrors")
         {
             this.Put("/{itemId}", async (parameters) =>
             {

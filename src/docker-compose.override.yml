@@ -1,12 +1,12 @@
 version: '3.4'
 
 services:
-  data.externalreference.in.api:
+  data.mirror.in.api:
     env_file:
       - ./var1.env
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-  data.externalreference.out.api:
+  data.mirror.out.api:
     env_file:
       - ./var1.env
     environment:

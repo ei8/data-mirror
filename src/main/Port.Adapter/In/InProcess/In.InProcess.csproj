@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>ei8.Data.ExternalReference.Port.Adapter.In.InProcess</AssemblyName>
-    <RootNamespace>ei8.Data.ExternalReference.Port.Adapter.In.InProcess</RootNamespace>
+    <AssemblyName>ei8.Data.Mirror.Port.Adapter.In.InProcess</AssemblyName>
+    <RootNamespace>ei8.Data.Mirror.Port.Adapter.In.InProcess</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

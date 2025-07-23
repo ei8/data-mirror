@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>ei8.Data.ExternalReference.Application</AssemblyName>
-    <RootNamespace>ei8.Data.ExternalReference.Application</RootNamespace>
+    <AssemblyName>ei8.Data.Mirror.Application</AssemblyName>
+    <RootNamespace>ei8.Data.Mirror.Application</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -12,7 +12,7 @@
   
   <ItemGroup>
     <PackageReference Include="CqrsLite" Version="0.18.1" />
-    <PackageReference Include="ei8.Data.ExternalReference.Common" Version="0.1.4" />
+    <PackageReference Include="ei8.Data.Mirror.Common" Version="0.1.4" />
     <PackageReference Include="ei8.EventSourcing.Client" Version="0.2.5" />
     <PackageReference Include="Neurul.Common" Version="0.1.19" />
     <PackageReference Include="Neurul.Common.Http" Version="0.1.15" />

@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using System;
 
-namespace ei8.Data.ExternalReference.Domain.Model
+namespace ei8.Data.Mirror.Domain.Model
 {
     public class UrlChanged : IEvent
     {

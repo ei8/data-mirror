@@ -5,9 +5,9 @@
 
     <IsPackable>false</IsPackable>
 
-    <AssemblyName>ei8.Data.ExternalReference.Port.Adapter.In.Api.Test</AssemblyName>
+    <AssemblyName>ei8.Data.Mirror.Port.Adapter.In.Api.Test</AssemblyName>
 
-    <RootNamespace>ei8.Data.ExternalReference.Port.Adapter.In.Api.Test</RootNamespace>
+    <RootNamespace>ei8.Data.Mirror.Port.Adapter.In.Api.Test</RootNamespace>
 
     <Copyright></Copyright>
   </PropertyGroup>

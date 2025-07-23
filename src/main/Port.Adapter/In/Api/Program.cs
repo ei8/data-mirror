@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace ei8.Data.ExternalReference.Port.Adapter.In.Api
+namespace ei8.Data.Mirror.Port.Adapter.In.Api
 {
     public class Program
     {

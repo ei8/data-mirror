@@ -13,7 +13,7 @@
 //using System.Threading.Tasks;
 //using Xunit;
 
-//namespace ei8.Data.ExternalReference.Application.Test.Neurons.NeuronCommandHandlersFixture.given
+//namespace ei8.Data.Mirror.Application.Test.Neurons.NeuronCommandHandlersFixture.given
 //{
 //    public abstract class NeuronCommandHandlerConstructingContext<TCommand> : ConstructingContext<Neuron, NeuronCommandHandlers, TCommand> where TCommand : ICommand
 //    {

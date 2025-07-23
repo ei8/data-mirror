@@ -6,7 +6,7 @@ FROM microsoft/dotnet:2.0-sdk AS build
 WORKDIR /src
 COPY *.sln ./
 COPY . .
-RUN dotnet restore ei8-Data-External-Reference-Master.sln
+RUN dotnet restore ei8-Data-Mirror-Master.sln
 WORKDIR /src/main/Port.Adapter/Out/Api
 RUN dotnet build -c Release -o /app
 

@@ -6,7 +6,7 @@
 //using System.Linq;
 //using Xunit;
 
-//namespace ei8.Data.ExternalReference.Application.Test.Neurons.Commands.CreateTerminalFixture.given
+//namespace ei8.Data.Mirror.Application.Test.Neurons.Commands.CreateTerminalFixture.given
 //{
 //    public abstract class ConstructingContext : TestContext<CreateTerminal>
 //    {

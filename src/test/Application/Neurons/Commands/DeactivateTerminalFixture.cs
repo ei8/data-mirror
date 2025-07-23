@@ -7,7 +7,7 @@
 //using System.Threading.Tasks;
 //using Xunit;
 
-//namespace ei8.Data.ExternalReference.Application.Test.Neurons.Commands.DeactivateTerminalFixture.given
+//namespace ei8.Data.Mirror.Application.Test.Neurons.Commands.DeactivateTerminalFixture.given
 //{
 //    public abstract class ConstructingContext : TestContext<DeactivateTerminal>
 //    {

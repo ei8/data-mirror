@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using ei8.Data.ExternalReference.Common;
+using ei8.Data.Mirror.Common;
 
-namespace ei8.Data.ExternalReference.Application
+namespace ei8.Data.Mirror.Application
 {
     public interface IItemQueryService
     {

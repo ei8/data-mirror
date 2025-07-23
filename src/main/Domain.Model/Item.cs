@@ -1,7 +1,7 @@
 ﻿using neurUL.Common.Domain.Model;
 using System;
 
-namespace ei8.Data.ExternalReference.Domain.Model
+namespace ei8.Data.Mirror.Domain.Model
 {
     /// <summary>
     /// Represents an Item.

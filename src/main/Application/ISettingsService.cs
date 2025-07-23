@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ei8.Data.ExternalReference.Application
+namespace ei8.Data.Mirror.Application
 {
     public interface ISettingsService
     {

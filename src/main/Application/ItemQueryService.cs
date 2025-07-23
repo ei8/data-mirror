@@ -4,11 +4,11 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 using ei8.EventSourcing.Client;
-using ei8.Data.ExternalReference.Common;
-using ei8.Data.ExternalReference.Domain.Model;
+using ei8.Data.Mirror.Common;
+using ei8.Data.Mirror.Domain.Model;
 using CQRSlite.Domain;
 
-namespace ei8.Data.ExternalReference.Application
+namespace ei8.Data.Mirror.Application
 {
     public class ItemQueryService : IItemQueryService
     {

@@ -2,7 +2,7 @@
 using neurUL.Common.Domain.Model;
 using System;
 
-namespace ei8.Data.ExternalReference.Application
+namespace ei8.Data.Mirror.Application
 {
     public class ChangeUrl : ICommand
     {

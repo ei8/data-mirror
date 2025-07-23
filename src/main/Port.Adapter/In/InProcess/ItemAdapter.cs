@@ -1,9 +1,9 @@
 ﻿using CQRSlite.Commands;
-using ei8.Data.ExternalReference.Application;
+using ei8.Data.Mirror.Application;
 using System;
 using System.Threading.Tasks;
 
-namespace ei8.Data.ExternalReference.Port.Adapter.In.InProcess
+namespace ei8.Data.Mirror.Port.Adapter.In.InProcess
 {
     public class ItemAdapter : IItemAdapter
     {
