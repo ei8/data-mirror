@@ -16,4 +16,4 @@ RUN dotnet publish -c Release -o /app /property:PublishWithAspNetCoreTargetManif
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "ei8.Data.ExternalReference.Port.Adapter.Out.Api.dll"]
+ENTRYPOINT ["dotnet", "ei8.Data.Mirror.Port.Adapter.Out.Api.dll"]
