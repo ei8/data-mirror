@@ -13,7 +13,7 @@
 //using ei8.EventSourcing.Client.Out;
 //using ei8.EventSourcing.Common;
 
-//namespace ei8.Data.ExternalReference.Application.Test.Neurons
+//namespace ei8.Data.Mirror.Application.Test.Neurons
 //{
 //    public abstract class ConstructingContext<TAggregate, THandler, TCommand> : ConditionalWhenSpecification<TAggregate, THandler, TCommand> where TAggregate : AggregateRoot where THandler : class where TCommand : ICommand
 //    {

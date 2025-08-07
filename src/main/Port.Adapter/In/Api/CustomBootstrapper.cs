@@ -5,13 +5,13 @@ using Nancy.TinyIoc;
 using neurUL.Common.Http;
 using System;
 using ei8.EventSourcing.Client;
-using ei8.Data.ExternalReference.Application;
-using ei8.Data.ExternalReference.Port.Adapter.IO.Process.Services;
+using ei8.Data.Mirror.Application;
+using ei8.Data.Mirror.Port.Adapter.IO.Process.Services;
 using CQRSlite.Events;
 using CQRSlite.Domain;
-using ei8.Data.ExternalReference.Port.Adapter.In.InProcess;
+using ei8.Data.Mirror.Port.Adapter.In.InProcess;
 
-namespace ei8.Data.ExternalReference.Port.Adapter.In.Api
+namespace ei8.Data.Mirror.Port.Adapter.In.Api
 {
     public class CustomBootstrapper : DefaultNancyBootstrapper
     {

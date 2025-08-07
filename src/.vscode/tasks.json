@@ -6,7 +6,7 @@
         {
             "label": "clean",
             "type": "shell",
-            "command": "dotnet clean ei8-Data-External-Reference-Master.sln",
+            "command": "dotnet clean ei8-Data-Mirror-Master.sln",
             "args": [],
             "problemMatcher": [],
             "group": {
@@ -17,7 +17,7 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "dotnet build ei8-Data-External-Reference-Master.sln",
+            "command": "dotnet build ei8-Data-Mirror-Master.sln",
             "args": [],
             "problemMatcher": [],
             "group": {

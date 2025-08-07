@@ -6,12 +6,12 @@ using System.Threading;
 using System.Threading.Tasks;
 using ei8.EventSourcing.Client;
 using ei8.EventSourcing.Client.In;
-using ei8.Data.ExternalReference.Domain.Model;
+using ei8.Data.Mirror.Domain.Model;
 using System;
 using CQRSlite.Domain;
 using CQRSlite.Events;
 
-namespace ei8.Data.ExternalReference.Application
+namespace ei8.Data.Mirror.Application
 {
     public class ItemCommandHandlers : 
         ICancellableCommandHandler<ChangeUrl>

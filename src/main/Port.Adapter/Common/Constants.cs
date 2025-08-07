@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ei8.Data.ExternalReference.Port.Adapter.Common
+namespace ei8.Data.Mirror.Port.Adapter.Common
 {
     public struct EnvironmentVariableKeys
     {

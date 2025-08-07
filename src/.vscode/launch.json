@@ -21,7 +21,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/src/main/Port.Adapter/In/Api/bin/Debug/netcoreapp2.0/ei8.Data.ExternalReference.Port.Adapter.In.Api.dll",
+                            "program": "${workspaceFolder}/src/main/Port.Adapter/In/Api/bin/Debug/netcoreapp2.0/ei8.Data.Mirror.Port.Adapter.In.Api.dll",
             "args": [],
             "cwd": "${workspaceFolder}/src/main/Port.Adapter/In/Api",
             "stopAtEntry": false,

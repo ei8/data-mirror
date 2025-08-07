@@ -13,7 +13,7 @@
 //using System.Threading.Tasks;
 //using Xunit;
 
-//namespace ei8.Data.ExternalReference.Application.Test.Neurons.TerminalCommandHandlersFixture.given
+//namespace ei8.Data.Mirror.Application.Test.Neurons.TerminalCommandHandlersFixture.given
 //{
 //    public abstract class TerminalCommandHandlerConstructingContext<TCommand> : ConstructingContext<Terminal, TerminalCommandHandlers, TCommand> where TCommand : ICommand
 //    {

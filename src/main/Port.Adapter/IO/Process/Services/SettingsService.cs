@@ -1,8 +1,8 @@
 ﻿using System;
-using ei8.Data.ExternalReference.Application;
-using ei8.Data.ExternalReference.Port.Adapter.Common;
+using ei8.Data.Mirror.Application;
+using ei8.Data.Mirror.Port.Adapter.Common;
 
-namespace ei8.Data.ExternalReference.Port.Adapter.IO.Process.Services
+namespace ei8.Data.Mirror.Port.Adapter.IO.Process.Services
 {
     public class SettingsService : ISettingsService
     {

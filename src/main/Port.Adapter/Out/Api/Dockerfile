@@ -6,7 +6,7 @@ FROM microsoft/dotnet:2.0-sdk AS build
 WORKDIR /src
 COPY *.sln ./
 COPY . .
-RUN dotnet restore ei8-Data-External-Reference-Master.sln
+RUN dotnet restore ei8-Data-Mirror-Master.sln
 WORKDIR /src/main/Port.Adapter/Out/Api
 RUN dotnet build -c Release -o /app
 
@@ -16,4 +16,4 @@ RUN dotnet publish -c Release -o /app /property:PublishWithAspNetCoreTargetManif
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "ei8.Data.ExternalReference.Port.Adapter.Out.Api.dll"]
+ENTRYPOINT ["dotnet", "ei8.Data.Mirror.Port.Adapter.Out.Api.dll"]

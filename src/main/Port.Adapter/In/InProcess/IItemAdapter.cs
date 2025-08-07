@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ei8.Data.ExternalReference.Port.Adapter.In.InProcess
+namespace ei8.Data.Mirror.Port.Adapter.In.InProcess
 {
     public interface IItemAdapter
     {

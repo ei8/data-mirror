@@ -5,7 +5,7 @@
 //using System;
 //using Xunit;
 
-//namespace ei8.Data.ExternalReference.Application.Test.Neurons.Commands.ChangeNeuronTagFixture.given
+//namespace ei8.Data.Mirror.Application.Test.Neurons.Commands.ChangeNeuronTagFixture.given
 //{
 //    public abstract class ConstructingContext : TestContext<ChangeNeuronTag>
 //    {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ei8.Data.ExternalReference.Domain.Model
+namespace ei8.Data.Mirror.Domain.Model
 {
     public struct Messages
     {

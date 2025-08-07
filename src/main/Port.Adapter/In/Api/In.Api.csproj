@@ -3,10 +3,10 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <PreserveCompilationContext>true</PreserveCompilationContext>
-    <AssemblyName>ei8.Data.ExternalReference.Port.Adapter.In.Api</AssemblyName>
+    <AssemblyName>ei8.Data.Mirror.Port.Adapter.In.Api</AssemblyName>
     <OutputType>Exe</OutputType>
-    <PackageId>ei8.Data.ExternalReference.Port.Adapter.In.Api</PackageId>
-    <RootNamespace>ei8.Data.ExternalReference.Port.Adapter.In.Api</RootNamespace>
+    <PackageId>ei8.Data.Mirror.Port.Adapter.In.Api</PackageId>
+    <RootNamespace>ei8.Data.Mirror.Port.Adapter.In.Api</RootNamespace>
     <Copyright></Copyright>
     <DockerComposeProjectPath>..\..\..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>

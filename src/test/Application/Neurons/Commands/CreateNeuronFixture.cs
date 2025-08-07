@@ -4,7 +4,7 @@
 //using System;
 //using Xunit;
 
-//namespace ei8.Data.ExternalReference.Application.Test.Neurons.Commands.CreateNeuronFixture.given
+//namespace ei8.Data.Mirror.Application.Test.Neurons.Commands.CreateNeuronFixture.given
 //{
 //    public abstract class ConstructingContext : TestContext<CreateNeuron>
 //    {

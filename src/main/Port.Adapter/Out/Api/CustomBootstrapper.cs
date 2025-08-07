@@ -1,12 +1,12 @@
 ﻿using Nancy;
 using Nancy.TinyIoc;
 using ei8.EventSourcing.Client;
-using ei8.Data.ExternalReference.Application;
-using ei8.Data.ExternalReference.Port.Adapter.IO.Process.Services;
+using ei8.Data.Mirror.Application;
+using ei8.Data.Mirror.Port.Adapter.IO.Process.Services;
 using CQRSlite.Events;
 using CQRSlite.Domain;
 
-namespace ei8.Data.ExternalReference.Port.Adapter.Out.Api
+namespace ei8.Data.Mirror.Port.Adapter.Out.Api
 {
     public class CustomBootstrapper : DefaultNancyBootstrapper
     {

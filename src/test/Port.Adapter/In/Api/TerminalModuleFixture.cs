@@ -9,7 +9,7 @@
 //using System.Threading.Tasks;
 //using Xunit;
 
-//namespace ei8.Data.ExternalReference.Port.Adapter.In.Api.Test.TerminalModuleFixture.given
+//namespace ei8.Data.Mirror.Port.Adapter.In.Api.Test.TerminalModuleFixture.given
 //{
 //    public abstract class Context : TestContext<Browser>
 //    {

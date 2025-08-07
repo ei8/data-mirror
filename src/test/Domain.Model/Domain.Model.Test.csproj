@@ -9,9 +9,9 @@
     <ProjectGuid>{AB2E896F-268E-417D-85F5-9D554AA11D67}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ei8.Data.ExternalReference.Domain.Model.Test</RootNamespace>
-    <AssemblyName>ei8.Data.ExternalReference.Domain.Model.Test</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <RootNamespace>ei8.Data.Mirror.Domain.Model.Test</RootNamespace>
+    <AssemblyName>ei8.Data.Mirror.Domain.Model.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
