@@ -7,8 +7,8 @@
     <authors>Elmer Roderick Niem Bool</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://www.gnu.org/licenses/agpl-3.0.en.html</licenseUrl>
-    <description>ei8 Data External Reference In-Process</description>
+    <description>ei8 Data Mirror In-Process</description>
     <releaseNotes>Initial.</releaseNotes>
-    <tags>ei8 data external reference inprocess</tags>
+    <tags>ei8 data mirror inprocess</tags>
   </metadata>
 </package>
