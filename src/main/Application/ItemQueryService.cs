@@ -1,12 +1,10 @@
-﻿using neurUL.Common.Domain.Model;
-using neurUL.Common.Http;
+﻿using CQRSlite.Domain;
+using ei8.Data.Mirror.Common;
+using ei8.Data.Mirror.Domain.Model;
+using neurUL.Common.Domain.Model;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using ei8.EventSourcing.Client;
-using ei8.Data.Mirror.Common;
-using ei8.Data.Mirror.Domain.Model;
-using CQRSlite.Domain;
 
 namespace ei8.Data.Mirror.Application
 {
